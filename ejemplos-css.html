@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos CSS</title>
+    <style>
+
+        body {
+            font-family: Verdana;
+        }
+        /* Comementario de código en CSS */
+        /* Tag selector */
+        h2 {
+            color: rgb(144, 171, 35);
+            text-align: center;
+        }
+
+        /* Seleccionamos todas las <p> del documento y le aplicamos 18px de tamaño de la fuente*/
+        p {
+            font-size: 18px;
+        }
+
+        /* Nos gustaría que todas las secciones tuvieran un ligero fondo azul y una pequeña sombra. El formulario no queda bien con ese azul. Mejor al formulario no se lo pongas, dejalo en blanco  */
+        .info {
+            background-color: rgba(86, 205, 165, 0.2);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Quiero crear una clase CSS para resaltar texto que para mi es importante  */
+        .important {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* Selector de id. Permite estilizar un tag con un valor id en concreto */
+        #nombre {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nos gustaría que este h1 fuera la letra de color verde. Vamos a usar el atributo style. Como valor al atributo style ponemos una propiedad:valor CSS. O varias propiedades CSS separadas por ; -->
+    <h1 style="color:green">Ejemplos CSS</h1>
+
+    <section class="info">
+        <!-- Me gustaría que todos los h2 fueran de un naranja suave. También me gustaría que el texto (contenido) esté alineado en el centro -->
+        <h2>¿Qué es CSS?</h2>
+        <p><span class="important">CSS</span> (Cascading Style Sheets) es un lenguaje que permite dar estilo a los elementos <span class="important">HTML</span>, como los colores,
+            tamaños y distribución.</p>
+    </section>
+    <section class="info">
+        <!-- Mira que lo hemos pensado mejor. TODOS los h2 de este documento los quiero de ese naranja suave y que estén alineados en centro-->
+        <h2>El atributo style</h2>
+        <p>Permite definir estilos directamente en una etiqueta HTML.</p>
+        <p>Ejemplo: <code>&lt;p style="color: blue;"&gt;Texto azul&lt;/p&gt;</code></p>
+    </section>
+    <section class="info">
+        <h2>Propiedades CSS comunes</h2>
+        <ul>
+            <li>color: Cambia el color del texto.</li>
+            <li>background-color: Cambia el color de fondo.</li>
+            <li>font-size: Define el tamaño de la letra.</li>
+            <li>font-family: Define el tipo de letra.</li>
+            <li>text-align: Alinea el texto (izquierda, centro, derecha).</li>
+            <li>text-decoration: Agrega subrayado, tachado, etc.</li>
+        </ul>
+    </section>
+    <section class="info">
+
+        <h2>La etiqueta &lt;style&gt;</h2>
+        <p>Permite definir estilos en un solo lugar dentro del &lt;head&gt; del documento.</p>
+    </section>
+    <section class="info">
+
+        <h2>Selectores CSS básicos</h2>
+        <h3>Tag selector</h3>
+        <p>Aplica estilos a todas las etiquetas de un tipo. Ejemplo:</p>
+        <p>p { color: green; }</p>
+
+        <h3>Class selector</h3>
+        <p>Aplica estilos a elementos con una clase específica. Ejemplo:</p>
+        <p>.info { background-color: lightgray; }</p>
+    </section>
+    <section class="info">
+        <h2>El atributo class</h2>
+        <p>Permite agrupar elementos para aplicarles estilos con CSS. Ejemplo:</p>
+        <p>&lt;div class="info"&gt;Contenido aquí&lt;/div&gt;</p>
+    </section>
+    <section class="info">
+
+    <h2>¿Cuándo usar unos y cuándo usar otros?</h2>
+    <ul>
+        <li>El tag selector es útil cuando queremos aplicar estilos a todas las etiquetas de un tipo.</li>
+        <li>El class selector es mejor cuando solo queremos estilizar ciertos elementos.</li>
+    </ul>
+    </section>
+
+    <section>
+
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>IronHack 2025</p>
+    </footer>
+</body>
+
+</html>

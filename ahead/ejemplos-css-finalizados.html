@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS en una Protectora de Animales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .info {
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .resaltado {
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Protectora de Animales y CSS</h1>
+    
+    <div class="info">
+        <h2>¿Qué es CSS?</h2>
+        <p>CSS (Cascading Style Sheets) es un lenguaje que permite dar estilo a los elementos HTML, como los colores, tamaños y distribución.</p>
+    </div>
+    
+    <div class="info">
+        <h2>El atributo <span class="resaltado">style</span></h2>
+        <p>Permite definir estilos directamente en una etiqueta HTML.</p>
+        <p>Ejemplo: <code>&lt;p style="color: blue;"&gt;Texto azul&lt;/p&gt;</code></p>
+    </div>
+    
+    <div class="info">
+        <h2>Propiedades CSS comunes</h2>
+        <ul>
+            <li><strong>color:</strong> Cambia el color del texto.</li>
+            <li><strong>background-color:</strong> Cambia el color de fondo.</li>
+            <li><strong>font-size:</strong> Define el tamaño de la letra.</li>
+            <li><strong>font-family:</strong> Define el tipo de letra.</li>
+            <li><strong>text-align:</strong> Alinea el texto (izquierda, centro, derecha).</li>
+            <li><strong>text-decoration:</strong> Agrega subrayado, tachado, etc.</li>
+        </ul>
+    </div>
+    
+    <div class="info">
+        <h2>La etiqueta <span class="resaltado">&lt;style&gt;</span></h2>
+        <p>Permite definir estilos en un solo lugar dentro del <code>&lt;head&gt;</code> del documento.</p>
+    </div>
+    
+    <div class="info">
+        <h2>Selectores CSS básicos</h2>
+        <h3>Tag selector</h3>
+        <p>Aplica estilos a todas las etiquetas de un tipo. Ejemplo:</p>
+        <code>p { color: green; }</code>
+
+        <h3>Class selector</h3>
+        <p>Aplica estilos a elementos con una clase específica. Ejemplo:</p>
+        <code>.info { background-color: lightgray; }</code>
+    </div>
+
+    <div class="info">
+        <h2>El atributo <span class="resaltado">class</span></h2>
+        <p>Permite agrupar elementos para aplicarles estilos con CSS. Ejemplo:</p>
+        <code>&lt;div class="info"&gt;Contenido aquí&lt;/div&gt;</code>
+    </div>
+    
+    <div class="info">
+        <h2>¿Cuándo usar unos y cuándo usar otros?</h2>
+        <ul>
+            <li>El <strong>tag selector</strong> es útil cuando queremos aplicar estilos a todas las etiquetas de un tipo.</li>
+            <li>El <strong>class selector</strong> es mejor cuando solo queremos estilizar ciertos elementos.</li>
+        </ul>
+    </div>
+</body>
+</html>

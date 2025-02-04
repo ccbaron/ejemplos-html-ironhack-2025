@@ -1,0 +1,18 @@
+div {
+    background-color: lightgray;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    width: 200px;
+    margin-bottom: 8px;
+    padding: 4px;
+}
+
+.selected {
+    background-color: aquamarine;
+    border-color: blue;
+    border-style: dashed;
+    margin-left: 30px;
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caja y Especificidad</title>
+    <style>
+        /* Selector por etiqueta: aplica a TODOS los div */
+        div {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+
+        /* Selector por clase: más específico que 'div' */
+        .tarjeta {
+            background-color: lightgray;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        /* Selector por clase adicional: más específico que '.tarjeta' */
+        .tarjeta.seleccionada {
+            background-color: lightblue;
+            border: 3px dashed blue;
+            margin-left: 30px;
+        }
+
+  
+    </style>
+
+</head>
+
+<body>
+    <div class="tarjeta">
+        <h2>Título 1</h2>
+        <p>Descripción de la tarjeta 1.</p>
+    </div>
+    
+    <div class="tarjeta seleccionada">
+        <h2>Título 2</h2>
+        <p>Descripción de la tarjeta 2.</p>
+    </div>
+
+    <div class="tarjeta">
+        <h2>Título 3</h2>
+        <p>Descripción de la tarjeta destacada.</p>
+    </div>
+</body>
+
+</html>
