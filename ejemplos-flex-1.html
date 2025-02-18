@@ -22,11 +22,8 @@
         }
 
         .gallery {
-            height: 600px;
             border: 2px solid black;
             display: flex;
-            align-items: center;
-            justify-content: space-evenly;
             flex-direction: row;
         }
 
@@ -50,7 +47,7 @@
 <body>
     <!-- La propiedad display:flex debe ir en el padre de todos los hijos que quieres alinear -->
     <div class="gallery">
-        <div class="article">
+        <div class="article" style="flex-shrink: 0;">
             <img src="https://placehold.co/600x400/000000/FFF" alt="Imagen 1">
             <h3>Título 1</h3>
             <p>Descripción del artículo 1.</p>
