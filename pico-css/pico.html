@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+
+</head>
+
+<body>
+    <!-- Formulario de adopción de gatitos -->
+    <h1>Formulario de adopción</h1>
+    <!-- Vamos a registrar el nombre del gato y su fecha de nacimiento-->
+    <form class="container" action="" method="GET">
+        <!-- controles de formulario -->
+        <div>
+            <label for="catname">Nombre del gato: </label>
+            <input type="text" name="catname" id="catname" placeholder="Garfield" required maxlength="30">
+        </div>
+        <div>
+            <label for="birthdate">Fecha nacimiento</label>
+            <input type="date" name="birthdate" id="birthdate" required>
+        </div>
+        <div>
+            <label for="city">Ciudad donde se encontró el gato: </label>
+            <select name="city" id="city">
+                <option value="sant-feliu-de-guixols">Sant Feliu de Guíxols</option>
+                <option value="palamos">Palamós</option>
+                <option value="girona">Girona</option>
+            </select>
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
